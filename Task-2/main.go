@@ -7,7 +7,7 @@ import (
 )
 
 func HomepageHandler(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"message": "Welcome to the Tech Company listing API with Golang"})
+	c.JSON(http.StatusOK, gin.H{"message": "Welcome to CRUD API with Golang"})
 }
 
 type Book struct {
