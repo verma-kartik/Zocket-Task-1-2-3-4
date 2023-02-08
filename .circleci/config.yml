@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/Zocket-Task-1-2-3-4/Task-2
     executor:
       name: go/default
-      tag: "1.16"
+      tag: "1.19"
     steps:
       - checkout:
           path: ~/Zocket-Task-1-2-3-4
