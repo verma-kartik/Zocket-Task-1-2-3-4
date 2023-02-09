@@ -39,8 +39,8 @@ func JsonToMap(data []byte) {
 }
 
 func main() {
-	// read data from CSV file
 
+	// read data from CSV file
 	csvFile, err := os.Open("./data.csv")
 
 	if err != nil {
@@ -77,14 +77,10 @@ func main() {
 		os.Exit(1)
 	}
 
-	// sanity check
-	// NOTE : You can stream the JSON data to http service as well instead of saving to file
-	//fmt.Println(string(jsondata))
-
-	// now write to JSON file
-
+	//convert JSON to Map Data Structure and print it.
 	JsonToMap(jsondata)
 
+	// now write to JSON file
 	jsonFile, err := os.Create("./data.json")
 
 	if err != nil {
